@@ -73,7 +73,7 @@ public class ProductRepo {
     }
 
     /**
-     * Fetch a live data list of all the app's categories. This is build dynamically from the
+     * Fetch a live data list of all the app's categories. This is built dynamically from the
      * different products in the database
      *
      * @return The category list, as live data.

@@ -1,2 +1,1 @@
-# cloudinary-android-sample-app
-Cloudinary Android sample application
+# Cloudinary's Android Demo Application
