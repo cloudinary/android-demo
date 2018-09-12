@@ -1,11 +1,12 @@
 package com.cloudinary.android.demo;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import androidx.test.InstrumentationRegistry;
+import androidx.test.runner.AndroidJUnit4;
 
 import static org.junit.Assert.assertEquals;
 
@@ -21,6 +22,6 @@ public class ExampleInstrumentedTest {
         // ContextHolder of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.cloudinary.android.ecommerce.demo", appContext.getPackageName());
+        assertEquals("com.cloudinary.android.demo", appContext.getPackageName());
     }
 }
