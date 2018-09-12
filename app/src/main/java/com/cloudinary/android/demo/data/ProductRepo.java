@@ -62,7 +62,7 @@ public class ProductRepo {
      * @param remoteRepo
      */
     @Inject
-    ProductRepo(Executor executor, ProductDao productDao, @Named("backend") RemoteProductRepo remoteRepo, Prefs prefs) {
+    ProductRepo(Executor executor, ProductDao productDao, @Named("cloudinary") RemoteProductRepo remoteRepo, Prefs prefs) {
         this.executor = executor;
         this.productDao = productDao;
         this.remoteRepo = remoteRepo;
