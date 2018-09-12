@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/product_item_Image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/itemBackground"
+        android:scaleType="centerInside"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_item_text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins_product_item"
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_item_Image"
+        tools:text="Product name" />
+
+    <TextView
+        android:id="@+id/product_item_text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins_product_item"
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_item_text_name"
+        tools:text="Product description" />
+
+    <ImageView
+        android:id="@+id/product_item_image_favorite_marker"
+        android:layout_width="@dimen/product_favorite_marker_height"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins_product_item"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@id/product_item_Image"
+        app:layout_constraintStart_toStartOf="@id/product_item_Image"
+        app:srcCompat="@drawable/ic_heart_black" />
+
+    <TextView
+        android:id="@+id/product_item_text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins_product_item"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/montserrat_alternates_medium_600"
+        android:paddingBottom="4dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/montserrat_alternates_medium_600"
+        app:layout_constraintBottom_toBottomOf="@id/product_item_Image"
+        app:layout_constraintEnd_toEndOf="@id/product_item_Image"
+        tools:text="$ 180" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="product_image_height">500dp</dimen>
+    <dimen name="card_height">300dp</dimen>
+    <dimen name="card_horizontal_margin">32dp</dimen>
+    <dimen name="card_vertical_margin">32dp</dimen>
+    <dimen name="card_elevation">12dp</dimen>
+    <dimen name="cart_item_image_width">180dp</dimen>
+    <dimen name="cart_item_height">204dp</dimen>
+    <dimen name="cart_item_margin">12dp</dimen>
+    <dimen name="cart_buttons_size">32dp</dimen>
+</resources>

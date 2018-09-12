@@ -1,0 +1,254 @@
+[
+  {
+    "department": "women",
+    "description": "Winter Warm Fluffy Faux Fur Coat",
+    "id": 13,
+    "images": [
+      "ydiiwcr5smewj7ziqcx9",
+      "l2vvy43ft7l1dknpd9bf",
+      "yadgbjktbwwx4jhj9j5d",
+      "qyyjf69tgfzc208jvbjv",
+      "hc12kewie9cz5omwdzdh",
+      "gjvm1jtekkdn0u7bekk3"
+    ],
+    "mainImage": "l2vvy43ft7l1dknpd9bf",
+    "name": "Faux Fur Coat",
+    "price": 299,
+    "sizes": "xs,s,m,l,xl",
+    "tags": [
+      "coats"
+    ]
+  },
+  {
+    "department": "men",
+    "description": "Comfort Lite",
+    "id": 1,
+    "images": [
+      "mlgkfqfamydmwfj065cq",
+      "yt0zuodudbvvrvseoxwd",
+      "fmtj9ldtpazap0vksmxb"
+    ],
+    "mainImage": "mlgkfqfamydmwfj065cq",
+    "name": "Casual Shoes",
+    "price": 100,
+    "sizes": "8,9,10,11,12,13",
+    "tags": [
+      "shoes"
+    ]
+  },
+  {
+    "department": "women",
+    "description": "Lightweight vest",
+    "id": 2,
+    "images": [
+      "v1gvvdncdxaisjzi9f48",
+      "umykcvbhtkb9ttoogme0",
+      "wyaidqa9tojfhpv54s2c",
+      "jwrn4xxx4pjgwo9kyuoo",
+      "uuu5dsuwdomomgwmprzp"
+    ],
+    "mainImage": "jwrn4xxx4pjgwo9kyuoo",
+    "name": "Vest",
+    "price": 49,
+    "sizes": "s,m,l,xl",
+    "tags": [
+      "coats"
+    ]
+  },
+  {
+    "department": "women",
+    "description": "Jinny",
+    "id": 3,
+    "images": [
+      "mcwdjifncf1td3bd0vy4",
+      "s3gjw0kzmoejsobmkf8d"
+    ],
+    "mainImage": "mcwdjifncf1td3bd0vy4",
+    "name": "Satchel",
+    "price": 189,
+    "sizes": "s,l",
+    "tags": [
+      "bags"
+    ]
+  },
+  {
+    "department": "women",
+    "description": "Michelle",
+    "id": 4,
+    "images": [
+      "ekb1vh9xlecr0q1ywq0e",
+      "je5nb8roeajwp426hhvn"
+    ],
+    "mainImage": "je5nb8roeajwp426hhvn",
+    "name": "Satchel",
+    "price": 219,
+    "sizes": "s,l",
+    "tags": [
+      "bags"
+    ]
+  },
+  {
+    "department": "women",
+    "description": "Polarized sunglasses",
+    "id": 5,
+    "images": [
+      "dyvtnruqdjumzyyokf72",
+      "hcfgn2g7qy58h9aayifs"
+    ],
+    "mainImage": "hcfgn2g7qy58h9aayifs",
+    "name": "Sunglasses",
+    "price": 54,
+    "tags": [
+      "sunglasses"
+    ]
+  },
+  {
+    "department": "men",
+    "description": "Valley 3",
+    "id": 6,
+    "images": [
+      "hxn2gefonrgtghglbrzd",
+      "e4xlj4yensluyg2f1wir",
+      "lybt1dz0usnysmxfglkk",
+      "xeygbwabb6tdzdr0okxz"
+    ],
+    "mainImage": "e4xlj4yensluyg2f1wir",
+    "name": "Sneakers",
+    "price": 84,
+    "sizes": "8,9,10,11,12,13",
+    "tags": [
+      "shoes"
+    ]
+  },
+  {
+    "department": "men",
+    "description": "Smartphone Z Plus",
+    "id": 7,
+    "images": [
+      "wpndbmvhrjscqpyg9yws",
+      "xek8idevthw3zttqts5n",
+      "bfejt6xwn5p3yliwird3",
+      "zkqxa0laa3a9hq8m9ciw"
+    ],
+    "mainImage": "wpndbmvhrjscqpyg9yws",
+    "name": "Smartphone",
+    "price": 649,
+    "tags": [
+      "gadgets"
+    ]
+  },
+  {
+    "department": "women",
+    "description": "Maxbook light",
+    "id": 8,
+    "images": [
+      "hltrmuqyzz1wez9hhheg",
+      "qtmnxkukqqgzaz3qgavz",
+      "foooutaly2ghxsrqk7zh",
+      "avllci590j2ea2ifpgwk"
+    ],
+    "mainImage": "avllci590j2ea2ifpgwk",
+    "name": "Laptop",
+    "price": 1299,
+    "tags": [
+      "gadgets"
+    ]
+  },
+  {
+    "department": "women",
+    "description": "Tablet 8",
+    "id": 9,
+    "images": [
+      "jkd3chuwjrjtmgry2efi",
+      "hsocuknlls1xkfyx9zbl",
+      "qnytkkzajxawlswzyhuv"
+    ],
+    "mainImage": "qnytkkzajxawlswzyhuv",
+    "name": "Tablet",
+    "price": 199,
+    "tags": [
+      "gadgets"
+    ]
+  },
+  {
+    "department": "men",
+    "description": "Next Messenger",
+    "id": 10,
+    "images": [
+      "wsiw9buenj6fkk9c2jyx",
+      "iieggwg3xidz2kxjvg81"
+    ],
+    "mainImage": "wsiw9buenj6fkk9c2jyx",
+    "name": "Messenger",
+    "price": 245,
+    "sizes": "s,l",
+    "tags": [
+      "bags"
+    ]
+  },
+  {
+    "department": "men",
+    "description": "Led Sneakers Air Force High Top",
+    "id": 11,
+    "images": [
+      "xqlnqzk2f36nti2iktmy",
+      "xxnyuzvdy6rjuee8vnsb",
+      "wap8yufodnenfkvmqyhm",
+      "wmj6cdwdk3iukgcjz0c0",
+      "w6hvmk1tkg12a8rrrtpb",
+      "jmkeg9piczpjdfls8pgr"
+    ],
+    "mainImage": "w6hvmk1tkg12a8rrrtpb",
+    "name": "Led Sneakers",
+    "price": 60,
+    "sizes": "8,9,10,11,12,13",
+    "tags": [
+      "led",
+      "shoes"
+    ]
+  },
+  {
+    "department": "women",
+    "description": "Led Sneakers Classic",
+    "id": 12,
+    "images": [
+      "mbptrag98brt624mn6mo",
+      "jl55iacvrewepfpb0wvr",
+      "mhwmqb3mbncztqmys0bw",
+      "g6vo3jjkuf7goosfwhug",
+      "njew92vniqvzn1n2havj",
+      "xixvpkrsllondvkpn937",
+      "ukosqfdvvbw778r8qtyl"
+    ],
+    "mainImage": "xixvpkrsllondvkpn937",
+    "name": "Led Sneakers",
+    "price": 50,
+    "sizes": "6,7,8,9,10,11",
+    "tags": [
+      "shoes",
+      "led"
+    ]
+  },
+  {
+    "department": "men",
+    "description": "Men\u0027s Watertight II Jacket",
+    "id": 14,
+    "images": [
+      "ifv0d8uzbv4ulldiroo3",
+      "kxjcqcwle1ntzlvzbwpa",
+      "gtixsamyyrpcoi69acbf",
+      "drugimtbid6nkbz1rlpd",
+      "wapdeonflcfbojif6pea",
+      "uus9m7fzveehrvnvqx5r",
+      "ohklzjq3gptdtolrqcvn",
+      "oizzg9prnwse0uqjfzdi"
+    ],
+    "mainImage": "ohklzjq3gptdtolrqcvn",
+    "name": "Jacket",
+    "price": 99,
+    "sizes": "s,m,l,xl,xxl",
+    "tags": [
+      "coats"
+    ]
+  }
+]

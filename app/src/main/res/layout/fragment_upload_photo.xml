@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="product"
+            type="com.cloudinary.android.demo.viewmodel.UploadViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="36dp"
+            android:layout_weight="3"
+            app:cardCornerRadius="@dimen/card_corner_radius">
+
+            <ImageView
+                android:id="@+id/upload_image_uploading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                app:imageUrl="@{product.images[0]}" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/upload_text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="36dp"
+            android:fontFamily="@font/montserrat_alternates_medium_600"
+            android:textSize="36sp"
+            tools:text="35%" />
+
+        <ProgressBar
+            android:id="@+id/upload_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/upload_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@{product.name}"
+            android:textSize="24sp"
+            tools:text="Product name" />
+    </LinearLayout>
+</layout>

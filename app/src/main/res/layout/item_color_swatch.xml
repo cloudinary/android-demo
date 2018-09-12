@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_colors_image_main"
+    android:layout_width="@dimen/colorSwatchSize"
+    android:layout_height="@dimen/colorSwatchSize"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/colorSwatchPadding" />

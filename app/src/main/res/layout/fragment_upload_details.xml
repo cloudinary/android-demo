@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="product"
+            type="com.cloudinary.android.demo.viewmodel.UploadViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="0dp"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="0dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="48dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/upload_guideline_images"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/upload_guideline_texts"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.4" />
+
+                    <TextView
+                        android:id="@+id/upload_text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="@string/label_product_name"
+                        app:layout_constraintBottom_toBottomOf="@+id/upload_edit_name"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/upload_edit_name"
+                        style="@style/UploadInputView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:text="@={product.name}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/upload_guideline_texts"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/upload_divider_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/dividerColor"
+                        app:layout_constraintTop_toBottomOf="@id/upload_text_name" />
+
+                    <ImageView
+                        android:id="@+id/upload_image_main"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_add_image_large"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:scaleType="centerCrop"
+                        app:imageUrl="@{product.images[0]}"
+                        app:layout_constraintDimensionRatio="2:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/upload_divider_top" />
+
+                    <ImageView
+                        android:id="@+id/upload_image_2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_add_image_small"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:scaleType="centerCrop"
+                        app:imageUrl="@{product.images[1]}"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintEnd_toStartOf="@id/upload_guideline_images"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/upload_image_main" />
+
+                    <ImageView
+                        android:id="@+id/upload_image_3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_add_image_small"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:scaleType="centerCrop"
+                        app:imageUrl="@{product.images[2]}"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/upload_guideline_images"
+                        app:layout_constraintTop_toBottomOf="@id/upload_image_main" />
+
+                    <View
+                        android:id="@+id/upload_divider_mid"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/dividerColor"
+                        app:layout_constraintTop_toBottomOf="@id/upload_image_2" />
+
+                    <!-- description -->
+                    <TextView
+                        android:id="@+id/upload_text_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="@string/label_product_description"
+                        app:layout_constraintBottom_toBottomOf="@+id/upload_edit_description"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/upload_divider_mid" />
+
+                    <EditText
+                        android:id="@+id/upload_edit_description"
+                        style="@style/UploadInputView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:inputType="textCapSentences"
+                        android:text="@={product.description}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/upload_guideline_texts"
+                        app:layout_constraintTop_toBottomOf="@id/upload_divider_mid" />
+
+                    <!-- price -->
+                    <TextView
+                        android:id="@+id/upload_text_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="@string/label_product_price"
+                        app:layout_constraintBottom_toBottomOf="@+id/upload_edit_price"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/upload_text_description" />
+
+                    <EditText
+                        android:id="@+id/upload_edit_price"
+                        style="@style/UploadInputView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:inputType="number"
+                        android:text="@={product.price}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/upload_guideline_texts"
+                        app:layout_constraintTop_toBottomOf="@id/upload_text_description" />
+
+                    <!-- gender -->
+                    <TextView
+                        android:id="@+id/upload_text_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="@string/label_product_gender"
+                        app:layout_constraintBottom_toBottomOf="@+id/upload_spinner_gender"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/upload_text_price" />
+
+                    <Spinner
+                        android:id="@+id/upload_spinner_gender"
+                        style="@style/UploadInputView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:selectedItemPosition="@={product.selectedGenderPosition}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/upload_guideline_texts"
+                        app:layout_constraintTop_toBottomOf="@id/upload_text_price" />
+
+                    <!-- category -->
+                    <TextView
+                        android:id="@+id/upload_text_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="@string/label_product_category"
+                        app:layout_constraintBottom_toBottomOf="@+id/upload_edit_category"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/upload_text_gender" />
+
+                    <EditText
+                        android:id="@+id/upload_edit_category"
+                        style="@style/UploadInputView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:inputType="textCapWords"
+                        android:text="@={product.category}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/upload_guideline_texts"
+                        app:layout_constraintTop_toBottomOf="@id/upload_text_gender" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/uploadButtonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_upload"
+            android:fontFamily="@font/montserrat_alternates_medium_600"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingEnd="48dp"
+            android:paddingStart="48dp"
+            android:text="@string/save_product"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp">
+
+        </TextView>
+    </RelativeLayout>
+</layout>

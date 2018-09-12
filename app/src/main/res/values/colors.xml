@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#fff</color>
+    <color name="colorAccent">#000</color>
+    <color name="top_banner_background">#fcd7a9</color>
+    <color name="bottom_banner_background">#bebebe</color>
+    <color name="navigation_item_unselected">#ccc</color>
+    <color name="windowBackground">#f7f7f7</color>
+    <color name="itemBackground">#f7f7f7</color>
+    <color name="dividerColor">#ccc</color>
+    <color name="dividerColorLight">#f7f7f7</color>
+    <color name="swatchColorBlue">#0099ff</color>
+    <color name="swatchColorRed">#ff6688</color>
+    <color name="swatchColorBlack">#000</color>
+    <color name="itemBackgroundSelected">#fcd6a8</color>
+    <color name="linkColor">#88f</color>
+    <color name="white">#fff</color>
+</resources>

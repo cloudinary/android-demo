@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="swatches">
+        <item>@color/swatchColorBlue</item>
+        <item>@color/swatchColorBlack</item>
+        <item>@color/swatchColorRed</item>
+    </integer-array>
+</resources>

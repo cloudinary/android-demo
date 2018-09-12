@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Cloudinary Demo</string>
+    <string name="title_about">About</string>
+    <string name="title_home">My-store</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_cart">Cart</string>
+    <plurals name="items_count">
+        <item quantity="one">%d ITEM</item>
+        <item quantity="other">%d ITEMS</item>
+    </plurals>
+    <string name="home_activity_title">My-store</string>
+    <string name="more_categories">More Categories</string>
+    <string name="women">Women</string>
+    <string name="men">Men</string>
+    <string name="about_subtitle">About this app</string>
+    <string name="price">$ %d</string>
+    <string name="about_info">With this open source Cloudinary-powered app, you can explore how to improve the user experience and performance of your apps by delivering images, enhanced and optimized for different contexts. Out of the box, you can leverage capabilities such as responsive images, automatic tagging and categorization using AI, and optimized delivery through global Content Delivery Networks (CDNs).</string>
+    <string name="cloudinary_signup_link">Sign up for free: <a href="https://cloudinary.com/signup">https://cloudinary.com/signup</a></string>
+    <string name="github_link"><a href="https://github.com/CloudinaryLtd/cloudinary-android-sample-app">https://github.com/cloudinary/cloudinary-android-sample-app</a></string>
+    <string name="place_order">Place order</string>
+    <string name="total_price">Total price</string>
+    <string name="total_price_default">$ 0</string>
+    <string name="size_xs">xs</string>
+    <string name="size_s">s</string>
+    <string name="size_m">m</string>
+    <string name="size_l">l</string>
+    <string name="size_xl">xl</string>
+    <string name="size_xxl">xxl</string>
+    <string name="add_to_cart">Add to cart</string>
+    <plurals name="items_added_to_cart">
+        <item quantity="one">%d item added</item>
+        <item quantity="other">%d items added</item>
+    </plurals>
+    <string name="go_to_cart">View cart</string>
+    <string name="related">Related</string>
+    <string name="title_add">Add product</string>
+    <string name="upload_activity_title">Upload</string>
+    <string name="save_product">Save product</string>
+    <string name="label_product_name">Product Name</string>
+    <string name="label_product_description">Description</string>
+    <string name="label_product_price">Price</string>
+    <string name="label_product_category">category</string>
+    <string name="label_product_gender">gender</string>
+    <string name="error_uploading_with_code">Error uploading, code: %d</string>
+    <string name="upload_error_no_images">Must provide at least one image</string>
+    <string name="upload_error_no_category">Must provide a category</string>
+    <string name="upload_error_no_description">must provide description</string>
+    <string name="upload_error_no_name">must provide product name</string>
+    <string name="upload_error_no_price">must provide product price</string>
+    <string name="upload_finished">Upload successful!</string>
+    <string name="upload_error">Upload failed</string>
+
+    <string-array name="clothes_sizes">
+        <item>@string/size_xs</item>
+        <item>@string/size_s</item>
+        <item>@string/size_m</item>
+        <item>@string/size_l</item>
+        <item>@string/size_xl</item>
+        <item>@string/size_xxl</item>
+    </string-array>
+
+    <string-array name="gender_choices">
+        <item>@string/women</item>
+        <item>@string/men</item>
+    </string-array>
+</resources>

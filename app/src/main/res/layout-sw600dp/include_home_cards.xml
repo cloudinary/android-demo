@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <com.cloudinary.android.demo.widget.DepartmentCard
+            android:id="@+id/home_card_women"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginBottom="48dp"
+            android:layout_marginStart="@dimen/card_horizontal_margin"
+            android:layout_marginTop="@dimen/card_vertical_margin"
+            android:layout_weight="1"
+            app:image="@drawable/img_woman_category"
+            app:label="@string/women" />
+
+        <com.cloudinary.android.demo.widget.DepartmentCard
+            android:id="@+id/home_card_men"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginBottom="48dp"
+            android:layout_marginEnd="@dimen/card_horizontal_margin"
+            android:layout_marginStart="@dimen/card_horizontal_margin"
+            android:layout_marginTop="@dimen/card_vertical_margin"
+            android:layout_weight="1"
+            app:image="@drawable/img_men_category"
+            app:label="@string/men" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_regular"
+        android:text="@string/more_categories"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat_alternates_regular" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/home_viewgroup_tags_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        app:alignContent="stretch"
+        app:alignItems="stretch"
+        app:flexWrap="wrap" />
+
+</LinearLayout>

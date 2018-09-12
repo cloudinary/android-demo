@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cart_item_height"
+    android:background="@color/colorPrimary">
+
+    <View
+        android:id="@+id/cart_item_divider_mid"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="@dimen/cart_item_margin"
+        android:layout_marginTop="@dimen/cart_item_margin"
+        android:background="@color/dividerColor"
+        app:layout_constraintBottom_toTopOf="@id/cart_item_text_total_price" />
+
+    <ImageView
+        android:id="@+id/cart_item_image_main"
+        android:layout_width="@dimen/cart_item_image_width"
+        android:layout_height="0dp"
+        android:background="@color/itemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@id/cart_item_image_main"
+        app:layout_constraintStart_toStartOf="@id/cart_item_image_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/cart_item_divider_items"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/dividerColorLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cart_item_image_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cart_item_text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cart_item_margin"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_alternates_medium_600"
+        android:lines="1"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:fontFamily="@font/montserrat_alternates_medium_600"
+        app:layout_constraintEnd_toStartOf="@id/cart_item_button_subtract"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_image_main"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Product title" />
+
+    <TextView
+        android:id="@+id/cart_item_text_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cart_item_margin"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@id/cart_item_button_subtract"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_image_main"
+        app:layout_constraintTop_toBottomOf="@+id/cart_item_text_title"
+        tools:text="product description" />
+
+    <TextView
+        android:id="@+id/cart_item_text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cart_item_margin"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_alternates_medium_600"
+        android:text="@string/total_price_default"
+        android:textSize="@dimen/cart_item_price_text_size"
+        app:fontFamily="@font/montserrat_alternates_medium_600"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:text="$ 500" />
+
+    <TextView
+        android:id="@+id/cart_item_text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cart_item_margin"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_button_add"
+        app:layout_constraintEnd_toStartOf="@+id/cart_item_button_add"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_button_add"
+        tools:text="2" />
+
+    <ImageView
+        android:id="@+id/cart_item_button_add"
+        android:layout_width="@dimen/cart_buttons_size"
+        android:layout_height="@dimen/cart_buttons_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/cart_item_divider_mid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_round_add_circle_outline" />
+
+    <ImageView
+        android:id="@+id/cart_item_button_subtract"
+        android:layout_width="@dimen/cart_buttons_size"
+        android:layout_height="@dimen/cart_buttons_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/cart_item_divider_mid"
+        app:layout_constraintEnd_toStartOf="@+id/cart_item_text_count"
+        app:srcCompat="@drawable/ic_round_remove_circle_outline" />
+
+    <TextView
+        android:id="@+id/cart_item_text_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat_alternates_medium_600"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        app:fontFamily="@font/montserrat_alternates_medium_600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="$ 500" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

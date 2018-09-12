@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/product_image_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_image_height"
+        android:background="@color/itemBackground"
+        android:scaleType="centerInside" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_list_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/product_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_alternates_regular"
+        android:lines="1"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="@color/colorAccent"
+        app:fontFamily="@font/montserrat_alternates_regular"
+        tools:text="Product description" />
+
+    <View
+        android:id="@+id/product_divider_sizes"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/dividerColor" />
+
+    <LinearLayout
+        android:id="@+id/product_viewgroup_sizes_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="@color/dividerColor" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="@integer/add_to_cart_gravity"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <com.cloudinary.android.demo.widget.CustomNumberPicker
+            android:id="@+id/product_picker_item_count"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/itemBackground"
+            app:max="10"
+            app:min="1"
+            app:value="1" />
+
+        <TextView
+            android:id="@+id/product_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat_alternates_medium_600"
+            android:textSize="28sp"
+            app:fontFamily="@font/montserrat_alternates_medium_600" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/product_button_add_to_cart"
+        style="@style/AppTheme.CartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="@integer/add_to_cart_gravity"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/add_to_cart" />
+</LinearLayout>

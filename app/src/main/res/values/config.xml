@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_cloud_name">cld-sample-cloud</string>
+    <string name="shared_cloud_name">cld-sample-cloud-shared</string>
+    <string name="global_tag">e_commerce_product</string>
+    <string name="sizes_string_separator">,</string>
+</resources>

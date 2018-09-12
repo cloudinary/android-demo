@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Default app theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/montserrat_light_400</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!-- Activity themes -->
+    <style name="AppTheme.Translucent">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="AppTheme.Translucent.darkStatus">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme.Translucent.lightStatus">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.Translucent.lightStatus.upload">
+        <item name="android:windowBackground">@color/itemBackgroundSelected</item>
+    </style>
+
+    <style name="AppTheme.lightStatus">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/bg_launch_screen</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Toolbar customizations -->
+    <style name="AppToolbar" parent="@style/ThemeOverlay.AppCompat.ActionBar"></style>
+
+    <style name="AppToolbarProduct" parent="@style/ThemeOverlay.AppCompat.ActionBar"></style>
+
+    <style name="AppToolbarProducts" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+
+    <style name="AppToolbarCategories" parent="@style/ThemeOverlay.AppCompat.ActionBar"></style>
+
+    <!-- Custom text appearance -->
+    <style name="customExpandedTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/expanded_title_font_size</item>
+    </style>
+
+    <style name="customCollapsedTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/collapsed_title_font_size</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium_600</item>
+    </style>
+
+    <!-- Specific views themes -->
+    <style name="AppTheme.CartButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingLeft">48dp</item>
+        <item name="android:paddingRight">48dp</item>
+    </style>
+
+    <style name="sizeTextViewStyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/btn_size</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="UploadInputView">
+        <item name="android:background">@color/itemBackground</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+</resources>

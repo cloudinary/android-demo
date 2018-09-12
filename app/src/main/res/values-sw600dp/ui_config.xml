@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="product_grid_span">3</integer>
+
+    <!-- gravity end -->
+    <integer name="add_to_cart_gravity">8388613</integer>
+</resources>

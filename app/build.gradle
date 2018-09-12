@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.cloudinary.android.demo"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 3
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:1.0.0-rc02"
+    implementation "com.google.android.material:material:1.0.0-rc01"
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+    implementation "androidx.cardview:cardview:1.0.0-rc02"
+    implementation "com.google.android:flexbox:0.3.2"
+
+    // Android architecture
+    def archVersion = '2.0.0-rc01'
+    implementation "androidx.lifecycle:lifecycle-extensions:${archVersion}"
+    implementation "androidx.lifecycle:lifecycle-common-java8:${archVersion}"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:${archVersion}"
+
+    // dagger
+    def daggerVersion = '2.16'
+    implementation "com.google.dagger:dagger:${daggerVersion}"
+    implementation "com.google.dagger:dagger-android:${daggerVersion}"
+    implementation "com.google.dagger:dagger-android-support:${daggerVersion}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
+
+    // Room
+    implementation "androidx.room:room-runtime:${archVersion}"
+    annotationProcessor "androidx.room:room-compiler:${archVersion}"
+
+    // Cloudinary
+    implementation "com.cloudinary:cloudinary-android:1.25.0"
+
+    // Picasso
+    implementation ("com.squareup.picasso:picasso:2.71828"){
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'exifinterface'
+    }
+
+    // Gson
+    implementation "com.google.code.gson:gson:2.8.5"
+
+    // Retrofit
+    def retrofitVersion = '2.3.0'
+    implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:converter-scalars:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+
+    // Tests
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+
+    // Test helpers for LiveData
+    testImplementation "androidx.arch.core:core-testing:${archVersion}"
+
+    // Test helpers for Room
+    testImplementation "androidx.room:room-testing:${archVersion}"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item android:drawable="@color/itemBackground" />
+
+    <item
+        android:width="24dp"
+        android:height="24dp"
+        android:drawable="@drawable/ic_round_add_circle_outline"
+        android:gravity="center" />
+
+</layer-list>
