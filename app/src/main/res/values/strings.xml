@@ -16,7 +16,7 @@
     <string name="price">$ %d</string>
     <string name="about_info">With this open source Cloudinary-powered app, you can explore how to improve the user experience and performance of your apps by delivering images, enhanced and optimized for different contexts. Out of the box, you can leverage capabilities such as responsive images, automatic tagging and categorization using AI, and optimized delivery through global Content Delivery Networks (CDNs).</string>
     <string name="cloudinary_signup_link">Sign up for free: <a href="https://cloudinary.com/signup">https://cloudinary.com/signup</a></string>
-    <string name="github_link"><a href="https://github.com/CloudinaryLtd/cloudinary-android-sample-app">https://github.com/cloudinary/cloudinary-android-sample-app</a></string>
+    <string name="github_link"><a href="https://github.com/cloudinary/android-demo">https://github.com/cloudinary/android-demo</a></string>
     <string name="place_order">Place order</string>
     <string name="total_price">Total price</string>
     <string name="total_price_default">$ 0</string>
